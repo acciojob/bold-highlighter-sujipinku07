@@ -1,12 +1,14 @@
 function highlight() {
-    //Write your code here
-
-
+//select all <strong> elements and change them to green color>
+	const boldWords = document.querySelectorAll("strong");
+	boldWords.forEach(word) =>  {
+		word.style.color = "green";
+	});
 }
-
-
 function return_normal() {
-    //Write your code here
-
-    
+    const boldWords = document.querySelectorAll("strong");
+	boldWords.forEach((word) => {
+		word.style.color =" black";
+	});
 }
+
